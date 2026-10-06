@@ -3,6 +3,7 @@
 
 void max( int a, int b, int c){
     int mayor;
+    // opción a: dos comprobaciones máximo
     if(a > b){
         if (a > c){
             mayor = a;
@@ -17,14 +18,26 @@ void max( int a, int b, int c){
             mayor = c;
     }
 
-    // opcion b
+    // opcion b: tres comprobaciones
+    if( a > b && a > c)
+        mayor = a;
+    else {
+        if(b > a && b > c ){
+            mayor = b;
+        }
+        else{
+            mayor = c;
+        }
+    }
+
+    // opcion c: reescritura
     if( a > b && a > c)
         mayor = a;
     else if(b > a && b > c )
         mayor = b;
-    else 
+    else
         mayor = c;
-
+    }
 
     printf("el mayor es %d\n", mayor);
 }
