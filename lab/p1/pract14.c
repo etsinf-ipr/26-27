@@ -19,6 +19,7 @@ int main() {
         // 90 min = 1h 30 min
         // 90 / 60 = 1 (div entera), 90 % 60 = 30 (resto)
         printf("%02d:%02d ", ahora / 60, ahora % 60);
+    printf("\n");
 
     return 0;
 }

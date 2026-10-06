@@ -18,7 +18,7 @@ int main() {
     printf("hora1 (hh:mm): "); 
     scanf("%d:%d", &h1, &m1);
     printf("hora2 (hh:mm): "); 
-    scanf("%d:%d", &h2, &m1);
+    scanf("%d:%d", &h2, &m2);
     
     if(ES_VALIDA(h1,m1) && ES_VALIDA(h2,m2))
         en_orden(h1, m1, h2, m2);
