@@ -37,7 +37,6 @@ void max( int a, int b, int c){
         mayor = b;
     else
         mayor = c;
-    }
 
     printf("el mayor es %d\n", mayor);
 }
