@@ -64,6 +64,7 @@ int main(int argc, char *argv[]){
     int dentro = generar_puntos(c, total_puntos);
     // calcular del valor de pi
     float pi = 4.0 * dentro / total_puntos;
-    printf("PI = %f\n", pi);
+    // la precision máxima suele ser 9 para float y 17 para double
+    printf("PI = %.9f\n", pi);
     return 0;
 }
