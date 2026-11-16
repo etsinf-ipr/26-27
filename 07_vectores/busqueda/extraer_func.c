@@ -20,6 +20,8 @@ int main(){
     int positivos[10];
     
     int num_elem = extraer_posit(a, positivos);
+    // opcion 2 ¿cómo sería la función extraer_posit en este caso?
+    //extraer_posit(a, positivos, &num_elem);
     
     for(int i = 0; i < num_elem; i++)
         printf("%d ", positivos[i]);
