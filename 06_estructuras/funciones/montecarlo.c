@@ -21,7 +21,7 @@ struct circulo{
 int esta_dentro(struct punto p, struct circulo c){
     // fórmula general
     // (x - x0)^2 + (y - y0)^2 <= r^2
-    // si centro (0,0) y radio = 1, x*x + y*y <= 1
+    // si centro (0,0) y radio = 1 -> x*x + y*y <= 1
     float dx = p.x - c.cx;
     float dy = p.y - c.cy;
     return dx*dx + dy*dy <= c.radio*c.radio;
